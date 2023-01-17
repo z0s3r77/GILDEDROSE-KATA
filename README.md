@@ -1,5 +1,10 @@
 # GILDEDROSE-KATA
 
+
+### Se a intentado resolver el ejercicio siguiendo siguiente diagrama de clases en Java
+
+
+
 Los items están constantemente degradandoce en calidad a medida que se acerca su fecha de caducidad.
 El sistema actualiza el inventario. 
 
@@ -10,13 +15,21 @@ Aclaración sobre los items:
 
  - Todos los items tienen un __SellIn__('fecha vencimiento') que denota el numero de dias disponibles para venderlo.
  - Todos los items tienen un __Quality__('calidad') que denota cuan valioso es el item.
- - Al final del día el sistema baja ambos valores a cada item.
+ - Al final del día el sistema baja ambos valores a cada item (*al final del día se hace un update_quality()*).
+ - Una vez se caduca el __SellIn__, la __Quality__ baja el doble de rapido.
+
+
+ - La __Quality__ de un item nunca es negativa.
+ - La __Quality__ de un item nunca es mayor de 50.
+
 
 Reglas:
 
- - Una vez se caduca, la __Quality__ baja el doble de rapido.
- - La __Quality__ de un item nunca es negativa.
- - La __Quality__ de un item nunca es mayor de 50.
- - *"Aged Bried"* aumenta __Quality__ al pasar el tiempo (aumenta __SellIn__).
- - *"Sulfuras"*, es un *item legendario*, nunca tiene que ser vendido ni bajar calida.
- - *"Backstage passes"*, como el *"Aged Bried"*, aumenta la __Quality__ a medida que se acerca el __SellIn__; La __Quality__ aumenta 2 cuando hay 10 días o menos en __SellIn__ y en 3 cuando hay menos de 5 días. 
+
+ - *"Aged Bried"* aumenta __Quality__ al pasar el tiempo (disminuye __SellIn__). Aumenta el doble cuando está caducado. 
+
+ -  El *"Backstage"* , como el Brie, incrementa su valor a medida que se caduca. Si tiene más de 10 días +1 calidad, +5 días +2 calida, +0 días +3 calidad. Si se caduca, 0 calidad.
+
+ - El "*Sulfuras*", ni se caduca , ni se vende.
+
+ Debemos añadir el tipo de item *"Conjured"*, que este se degrada el doble de rapido que un item Normal.
