@@ -2,6 +2,7 @@
 
 
 ### Se a intentado resolver el ejercicio siguiendo siguiente diagrama de clases en Java
+![diagrama_clases_UML](https://user-images.githubusercontent.com/80277545/212892060-f1d494e7-ff6d-42bb-908f-f6cca19d3deb.jpg)
 
 
 
