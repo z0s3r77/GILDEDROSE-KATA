@@ -1,7 +1,12 @@
 # GILDEDROSE-KATA
+### Kata de @Emilybache
+[Enlace a su repositorio](https://github.com/emilybache/GildedRose-Refactoring-Kata) 
 
+### Kata realizado en Java por el profesor
+[Enlace a su repositorio](https://github.com/dfleta/gilded-rose-kata-java)
 
-### Se a intentado resolver el ejercicio siguiendo siguiente diagrama de clases en Java
+__Se a intentado resolver el ejercicio siguiendo siguiente diagrama de clases en Java__
+![diagrama_clases_UML](https://user-images.githubusercontent.com/80277545/212892060-f1d494e7-ff6d-42bb-908f-f6cca19d3deb.jpg)
 
 
 
